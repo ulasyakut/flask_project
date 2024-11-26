@@ -2,7 +2,8 @@ from flask import Flask
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET KEY'] = 'cookie password'
+    app.config['SECRET_KEY'] = 'super secret key'
+    
 
     from .views  import views
     from .auth import auth
